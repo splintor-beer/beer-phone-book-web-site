@@ -1,6 +1,6 @@
-## ספר הטלפונים של ירוחם - אתר האינטרנט 
+## ספר הטלפונים של מדרשת באר - אתר האינטרנט 
 
-A [next.js](https://nextjs.org/) site to provide access to Yeruham Phone book data.
+A [next.js](https://nextjs.org/) site to provide access to Beer Phone book data.
 
 We store the data on a [Wix site data collection](https://www.wix.com/corvid/feature/database)
 with [services](./wix-site-code) to access the data.
