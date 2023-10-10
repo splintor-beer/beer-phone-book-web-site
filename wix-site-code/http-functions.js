@@ -80,6 +80,7 @@ async function processData(phoneNumber, pagesList) {
 
   const phonesMap = new Map()
   const tagsSet = new Set()
+
   activePages.forEach(page => {
     const matches = page.html.replace(/[+\-.]+/g, '').match(/[^A-Z_\d=\/:]\d{9,}/g)
     matches && matches.forEach(match => {
@@ -472,7 +473,7 @@ export async function get_pages(request) {
 // URL: https://<wix-site-url>/_functions/tag/<tag>
 // noinspection JSUnusedGlobalSymbols
 export async function get_tag(request) {
-  const searchedTag = decodeURI(request.path[0]).replace(/_/g, ' ').replace(/"/g, '')
+  const searchedTag = decodeURI(request.path[0]).replace(/_/g, ' ')
 
   if (!allPages) {
     await loadCacheData()
